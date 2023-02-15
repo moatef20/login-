@@ -1,0 +1,72 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --main-color:rgb(38, 114, 133);
+    
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+.home{
+    background: rgb(112,196,216);
+    background: linear-gradient(47deg, rgba(112,196,216,1) 0%, rgba(7,130,188,1) 48%, rgba(23,40,81,1) 100%);;
+}
+.container{
+    background-image: url(../img/Untitled-1.jpg);
+    background-size: cover ;
+    background-position: center center;
+    height: 80vh;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        background-image: none;
+        box-shadow: none !important;
+    }
+    .formInfo{
+        width: 100% !important;
+        padding: 50px 0;
+        margin-top: 50px !important;
+    }
+}
+.form-group{
+    margin: 10px 0;
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+.form-group input{
+    width: 100% !important;
+    margin: 10px 0 !important;
+    padding-left: 30px;
+}
+.form-group i{
+    position: absolute;
+    left:10px;
+    bottom: 20px;
+
+}
+.btn{
+    color: #fff;
+    background-color: #49ABCD;
+    border: rgb(44, 181, 219) solid 1px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #08689F;
+    color: rgb(239, 241, 244) !important;
+}
+.new-account{
+font-size: 14px;
+}
+#signUpNow{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#signUpNow:hover{
+    text-decoration: underline;
+    color: #49ABCD;
+}

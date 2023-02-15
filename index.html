@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="home py-md-5 vh-100">
+      <div class="container p-4 rounded-3 shadow">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title m-auto text-center">
+              <h1 class="text-white">Smart Login</h1>
+              <h5 class="text-white-50">Welcome to our smart community</h5>
+            </div>
+            <div class="formInfo bg-white rounded-3 mt-lg-5 py-lg-4 w-50 m-auto">
+              <div class="loginForm">
+                <div class="form-group d-flex align-items-center flex-column">
+                  <i class="fa-regular fa-circle-user m-auto"></i>
+                  <input type="text" class="form-control w-75 m-auto" name="email" id="email" placeholder="Enter your Email or User name"/>
+                  <input type="text" class="form-control w-75 m-auto d-none" name="name" id="name" placeholder="Enter you name">
+                </div>
+                  <p class=" alert alert-danger w-50 m-auto d-none" id="alertUserIncorrect">User Name or Email is incorrect</p>
+                  <p class=" alert alert-danger w-50 m-auto d-none" id="alertUserExits">This User Name or Email is Exits</p>
+                <div class="form-group d-flex align-items-center">
+                  <i class="fa-solid fa-unlock-keyhole m-auto"></i>
+                  <input type="password" class="form-control w-75 m-auto" name="password" id="password" placeholder="Enter your Password"/>
+                </div>
+                <p class=" alert alert-danger w-50 m-auto d-none" id="alertPasswordIncorrect">Password is incorrect</p>
+                <button class=" btn btn-info px-5 rounded-pill m-auto d-block mt-4" id="loginBtn">Login</button>
+                <button class=" btn btn-info px-5 rounded-pill m-auto d-block mt-4 d-none" id="regBtn">Register Now</button>
+                <div class="new-account text-center mt-2">
+                  <span>Don't have an account?</span>
+                  <span id="signUpNow">Sign Up Now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- script files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
