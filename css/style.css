@@ -59,14 +59,14 @@ h1{
     background-color: #08689F;
     color: rgb(239, 241, 244) !important;
 }
-.new-account{
+.new-account , .current-account{
 font-size: 14px;
 }
-#signUpNow{
+#signUpNow , #loginNow{
     cursor: pointer;
     transition: all 0.5s;
 }
-#signUpNow:hover{
+#signUpNow:hover , #loginNow:hover{
     text-decoration: underline;
     color: #49ABCD;
 }

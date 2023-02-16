@@ -8,7 +8,8 @@ var passwordInc = document.getElementById("alertPasswordIncorrect");
 var loginBtn = document.getElementById("loginBtn");
 var regBtn = document.getElementById("regBtn");
 var signUp = document.getElementById("signUpNow");
+var login = document.getElementById("loginNow");
 
 //chaeck all elements:
-// console.log(uEmail,uName,uPassword,userInc,userExits,passwordInc,loginBtn,regBtn,signUp);
+ console.log(uEmail,uName,uPassword,userInc,userExits,passwordInc,loginBtn,regBtn,signUp,login);
 
