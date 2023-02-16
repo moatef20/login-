@@ -1,0 +1,15 @@
+// get all elements from HTML:
+var uEmail = document.getElementById("emailInp");
+var uName = document.getElementById("nameInp");
+var uPassword = document.getElementById("passwordInp");
+var userInc = document.getElementById("alertUserIncorrect");
+var userExits = document.getElementById("alertUserExits");
+var passwordInc = document.getElementById("alertPasswordIncorrect");
+var loginBtn = document.getElementById("loginBtn");
+var regBtn = document.getElementById("regBtn");
+var signUp = document.getElementById("signUpNow");
+var login = document.getElementById("loginNow");
+
+
+loginBtn.classList.add("d-none");
+regBtn.classList.remove("d-none");

@@ -19,29 +19,29 @@
               <h1 class="text-white">Smart Login</h1>
               <h5 class="text-white-50">Welcome to our smart community</h5>
             </div>
-            <div class="formInfo bg-white rounded-3 mt-lg-5 py-lg-4 w-50 m-auto">
+            <div class="formInfo bg-white bg-opacity-50 rounded-3 mt-lg-5 py-lg-4 w-50 m-auto">
               <div class="loginForm">
                 <div class="form-group d-flex align-items-center flex-column">
                   <i class="fa-regular fa-circle-user m-auto"></i>
-                  <input type="text" class="form-control w-75 m-auto" name="email" id="email" placeholder="Enter your Email "/>
-                  <input type="text" class="form-control w-75 m-auto d-none" name="name" id="name" placeholder="Enter you name">
+                  <input type="text" class="form-control w-75 m-auto" name="emailInp" id="emailInp" placeholder="Enter your Email "/>
+                  <input type="text" class="form-control w-75 m-auto d-none" name="nameInp" id="nameInp" placeholder="Enter your name">
                 </div>
                   <p class=" alert alert-danger w-50 m-auto d-none" id="alertUserIncorrect">User Name or Email is incorrect</p>
                   <p class=" alert alert-danger w-50 m-auto d-none" id="alertUserExits">This User Name or Email is Exits</p>
                 <div class="form-group d-flex align-items-center">
                   <i class="fa-solid fa-unlock-keyhole m-auto"></i>
-                  <input type="password" class="form-control w-75 m-auto" name="password" id="password" placeholder="Enter your Password"/>
+                  <input type="password" class="form-control w-75 m-auto" name="passwordInp" id="passwordInp" placeholder="Enter your Password"/>
                 </div>
                 <p class=" alert alert-danger w-50 m-auto d-none" id="alertPasswordIncorrect">Password is incorrect</p>
                 <button class=" btn btn-info px-5 rounded-pill m-auto d-block mt-4" id="loginBtn">Login</button>
                 <button class=" btn btn-info px-5 rounded-pill m-auto d-block mt-4 d-none" id="regBtn">Register Now</button>
                 <div id="signUpNow" class="new-account text-center mt-2">
                   <span>Don't have an account?</span>
-                  <span >Sign Up Now</span>
+                  <span class="signLink">Sign Up Now</span>
                 </div>
                 <div id="loginNow" class="current-account text-center mt-2 d-none">
                   <span>Already have an account?</span>
-                  <span >login</span>
+                  <span class="loginLink">login</span>
                 </div>
               </div>
             </div>
