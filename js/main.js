@@ -16,6 +16,11 @@ var login = document.getElementById("loginNow");
 // master array of users credentials:
 var usersCredentials = [];
 
+// get users cred in login:
+if(localStorage.getItem("users credentials") != null){
+    usersCredentials = JSON.parse(localStorage.getItem("users credentials"))
+};
+
 //function switch to sgin up =>
 signUp.addEventListener("click" , showSignUpInp);
 
@@ -45,11 +50,39 @@ function showLoginInp(){
 // add new user function =>
 regBtn.addEventListener("click",signNewUsers)
 function signNewUsers(){
-    var user = {
-        user_name: uName.value,
-        user_email: uEmail.value,
-        user_password: uPassword.value,
+    if(validatePassword()==true){
+        var user = {
+            user_name: uName.value,
+            user_email: uEmail.value,
+            user_password: uPassword.value,
+        }
+        usersCredentials.push(user);
+        localStorage.setItem("users credentials" , JSON.stringify(usersCredentials) )
+        clearForm ();
+        showLoginInp(usersCredentials);
+        // console.log(user)
+        // console.log(usersCredentials)
     }
-    usersCredentials.push(user);
-    console.log(user)
+    else{
+        alert("password is not valid")
+    }
+    
 };
+
+//password validate function =>
+function validatePassword(){
+    let regex = /^[a-z]{8,20}[A-Z]{1,20}[0-9]{0,10}$/;
+    if (regex.test(uPassword.value)== true){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+// clear signup form function =>
+function clearForm (){
+    uName.value="";
+    uEmail.value="";
+    uPassword.value="";
+}
