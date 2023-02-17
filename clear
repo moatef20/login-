@@ -1,0 +1,29 @@
+[33mcommit 5f97e72f4bd8d44049fa535793c54fec46bcc1e9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: atef <mohamedatef20@outlook.com>
+Date:   Fri Feb 17 17:28:30 2023 +0200
+
+    created signup func with regex and save it in local sotrage
+
+[33mcommit aec3f13f28d9fcfbca78ac43792fb39970f8dd36[m
+Author: moAtef <mohamedatef65@gmail.com>
+Date:   Fri Feb 17 00:42:16 2023 +0200
+
+    created sign new user function & user cred array.
+
+[33mcommit 1fb7ee25f732d3b8df4da49c104cb400e0115d2a[m
+Author: moAtef <mohamedatef65@gmail.com>
+Date:   Thu Feb 16 21:39:42 2023 +0200
+
+    switch login / signup func
+
+[33mcommit 99d5226e7da6b18eb43db5ecfa54ac260e00bd13[m
+Author: moAtef <mohamedatef65@gmail.com>
+Date:   Thu Feb 16 17:07:13 2023 +0200
+
+    ass login link in HTML,CSS,JS
+
+[33mcommit aa98203ec98fbd122ec4a5644dd3afd55b9eb974[m
+Author: moAtef <mohamedatef65@gmail.com>
+Date:   Wed Feb 15 20:08:36 2023 +0200
+
+    created html and css files and basec js commands

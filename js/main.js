@@ -18,7 +18,8 @@ var usersCredentials = [];
 
 // get users cred in login:
 if(localStorage.getItem("users credentials") != null){
-    usersCredentials = JSON.parse(localStorage.getItem("users credentials"))
+    usersCredentials = JSON.parse(localStorage.getItem("users credentials"));
+    showLoginInp(usersCredentials);
 };
 
 //function switch to sgin up =>
@@ -47,8 +48,8 @@ function showLoginInp(){
     document.querySelector(".fa-unlock-keyhole").classList.remove("d-none")
 }
 
-// add new user function =>
-regBtn.addEventListener("click",signNewUsers)
+// add new user function (mian function)** =>
+regBtn.addEventListener("click",signNewUsers);
 function signNewUsers(){
     if(validatePassword()==true){
         var user = {
@@ -64,10 +65,24 @@ function signNewUsers(){
         // console.log(usersCredentials)
     }
     else{
-        alert("password is not valid")
+        alert("password is invalid")
     }
     
 };
+
+
+//login function =>
+loginBtn.addEventListener("click" , loginUser);
+function loginUser(){
+    if(validatePassword()==true){
+
+    }
+    else{
+        alert("Email or password is invalid")
+    }
+};
+
+
 
 //password validate function =>
 function validatePassword(){
